@@ -1,0 +1,9 @@
+build:
+  command: npm install && npm run build
+  publish: /dist
+services:
+  - type: web
+    name: j5-solutions
+    plan: free
+    env: static
+    staticPublishPath: "/dist"
