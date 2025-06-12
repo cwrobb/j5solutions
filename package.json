@@ -1,5 +1,5 @@
 {
-  "name": "ResonateMS",
+  "name": "j5solutions",
   "private": true,
   "version": "0.0.0",
   "homepage": "https://cwrobb.github.io/J5",
@@ -8,8 +8,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "preview": "vite preview" 
   },
   "dependencies": {
     "aos": "^2.3.4",
