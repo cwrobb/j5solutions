@@ -2,12 +2,12 @@
   "name": "j5solutions",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://cwrobb.github.io/J5",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && cp dist/index.html dist/404.html",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview" 
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -29,7 +29,6 @@
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "gh-pages": "^6.3.0",
     "scss": "^0.2.4",
     "vite": "^5.1.6"
   }
